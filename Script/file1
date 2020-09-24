@@ -1,1 +1,4 @@
-d
+git clone https://github.com/daniellcurto/Project1
+chmod a+x script
+PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
+sudo chmod -x /etc/update-motd.d/*
