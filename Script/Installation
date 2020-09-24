@@ -1,2 +1,3 @@
 git clone https://github.com/daniellcurto/Project1
-chmod a+x
+chmod a+x script
+PATH=$
