@@ -2,4 +2,6 @@ git clone https://github.com/daniellcurto/Project1
 chmod a+x script
 PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
 sudo chmod -x /etc/update-motd.d/
-echo '"Welcome to your system Mr. Curto. There are currently '$(find . | wc -l)'-nodes running"' /etc/update-motd.d/curto-motd
+
+#What I am trying to do with this one is tell a particular user how many nodes they are running
+echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
