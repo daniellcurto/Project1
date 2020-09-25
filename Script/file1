@@ -3,4 +3,5 @@ chmod a+x script
 PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
 sudo chmod -x /etc/update-motd.d/*
 echo '"Welcome to your system Mr. Curto. There are currenrtly " i-nodes " running"' /etc/update-motd.d/curto-motd
-sudo chmod +x /etc/update-motd.d/curto-motd
+sudo apt-get install neofetch
+sudo bash -c $'echo "neofetch" >> /etc/profile.d/dantechmotd.sh chmod+x /etc/prifle.d/dantechmotd.sh'
