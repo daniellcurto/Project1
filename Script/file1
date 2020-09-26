@@ -60,3 +60,6 @@ I+68Vrk78qogdGNNngGjD3BpxjPQQw70I4s7VntRm8oYS3J29rdg
 
 #here I am trying to make a command using my login information for the AWS Educate system
 
+suod apt-get install cowsay
+
+#Please run .bashrc_profile to reload
