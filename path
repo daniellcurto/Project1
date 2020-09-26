@@ -54,5 +54,3 @@ i
 .TH man 8 "September 25, 2020" "1.0" "bashrc_profile man page"
 .SH NAME
  \- login through ssh into a system and installs cowsay
-
-echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
