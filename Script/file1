@@ -11,5 +11,52 @@ sudo chmod -x /etc/update-motd.d/90-updates-available
 echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
 
 #This installes the Solarized vim color scheme
+
+mkdir ~/.vim
+mkdir ~/.vim/bundle
+cd ~/.vim/bundle
 git clone git://github.com/altercation/solarized.git
+cd solarized/
+mv vim-colors-solarized/ ~/.vim/bundle/
+cd
+vim .vimrc
+i
+sytanx enable
+set background=light
+colorscheme solarized
+
+
+#I don't know how else to exit out of vim without having human interfance sorry about that
+
+vim .bashrc_profle
+i
+aws-ssh -----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAqVH3xUsrVHqkMzxe/7ALZiw74oDXaAuYksqEwNEPH2x67dwi
+EtqfaNebTNwEVuko85z9wv3dN7SP+jIJrbBNSyo777ONAJAUUKL8X25WREfZQUYW
+18AfsHDxwWNhj17xJbZvBM/mfL0y6+eukPhlOPpJEcCVooxDx/8geRio13LkgVz3
+2Fgn3EbWHG2+joC8jcJ37uKG+D5KMHAVCCLeexiqCYPvXSbl972dYVOnIgvz7veu
+NeQVWdTLTFEJJHzo5TkP9a7OkZqvl0yvRpvuPEACDIpXw8tbGWVnQwNaULDdnUxe
+rGc8j6MoZIPNkirWdsobJwqs+VFLnNVbABKaBQIDAQABAoIBACcytq2SDWHtUn4a
+B9QhqUHqE6MIONX5eUTiZYFN5LZdosfWIn1C54yZ/XX5qXeFWtmrCoRNyRzQTFSb
+qOnw2rP//wgrBQWQVWOll89v98Cu8XjPBRLFg5CRVSZ0H23ViPY2GdV/W9ic5GEA
+rcUZ/DUInEnjz8BlwHtYcOgX8V6O9cYzAZ5T+SIpErk3rg0x/qyuYDNhk5OXVOAN
+Odr1fZyNGn5Ml5UYLDzzMjtB5f1SVj5cDiaV/eWy3RtyV3x0hrEg2hlwW4bXoB1G
+yyU36AENhDLdrMCHiaHUMJBk8sf3GS536rgGGwyGHkeo6Oy76JRsy+dv2MgineIS
+eojWjIECgYEA5Va5LzlDMwHpmEQCp2KAIfChCUu6NUlYu25Uf3LT0UoZ2ol7Q6gF
+VcbuGbx/3UYnnPuLyR30rAh0Ihl34H8PjaR522gBxiyys6NUvC50XnG8BUAebyMG
+OvdWMhp64TekYthWxBmK5HG3/9uXDvciUjhaRzYYokDF3s1f9tdC0U0CgYEAvQEN
+E1A5NYrjVbL8ngH0HrgtblZ0q8Qs4730ipQsJe1BGsO+mXS/RXUOKUwSd95Q8VzO
+bPq1XAbrlMbegjq4jsoaMtPTsJl/Ug777K6t60uJOxZ/N9PKJqgjApiuNyRbFtqJ
+3YcJG4gQoxJai57vDLVnQDIUhuhoOi3f87pgD5kCgYEA2wP+J/4ckcrCxZo1mpqz
+2TXO5GzAcIESTzTnVytW4+lLVWu0HwGHzsoCuutMhQmpbP7BGRkVf3E3TxVZaTiO
+pusrQIBMKXCoXGuf0XLfyQ3+zFjWd7ZQDeIFHCYzsX+M6qTF/9KQ1OdRG/Qeh7k1
+uqV8ecNMtS78iHFDsx0R/4UCgYAsepXYKLX96ryLS371tGH95LwUTlZQoe8qfWaS
+QkKNfmMm6E/vjzEAKIb3owZpnTERTBTsQqfxi1NfhNmSbj1GpTs7IOydj9INvqb8
+0TLuv60A8c9olPfq1wC+OK4vHegt3ao6LvAuwXug1M3oM7PwGrS8v8xi30jAAFHG
+6uJ2aQKBgHqOvV8bHiWzEHTi70PhJJx3Sna6PwXnVcfo+i682RIoSWy9CCp09PrR
+DqPZUSfbKlgQz9fIqGkaniBhZX/ridBhkiytiaqcMT1rnUpX9BjD4gmfFtMHSqCL
+I+68Vrk78qogdGNNngGjD3BpxjPQQw70I4s7VntRm8oYS3J29rdg
+-----END RSA PRIVATE KEY-----    ubuntu @64.205.113.32
+
+#here I am trying to make a command using my login information for the AWS Educate system
 
