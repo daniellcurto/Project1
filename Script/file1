@@ -55,5 +55,4 @@ i
 .SH NAME
  \- login through ssh into a system and installs cowsay
 
-
-
+echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
