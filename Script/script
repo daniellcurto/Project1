@@ -1,0 +1,2 @@
+chmod a+x script
+PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
