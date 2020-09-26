@@ -9,3 +9,7 @@ sudo chmod -x /etc/update-motd.d/90-updates-available
 
 #What I am trying to do with this one is tell a particular user how many nodes they are running
 echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
+
+#This installes the Solarized vim color scheme
+git clone git://github.com/altercation/solarized.git
+
