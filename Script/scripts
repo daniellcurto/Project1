@@ -1,8 +1,11 @@
+# /bin/bash
+
+addScriptToPATH () {
 vim .bashrc_profle
 i
 aws-ssh curto.2@wright.edu
-
 #here I am trying to make a command using my login information for the AWS Educate system
+}
 
 suod apt-get install cowsay
 
@@ -55,3 +58,5 @@ echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | w
 
 chmod a+x script
 PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
+
+addScriptToPATH
