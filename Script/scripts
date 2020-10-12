@@ -7,27 +7,18 @@ aws-ssh curto.2@wright.edu
 #here I am trying to make a command using my login information for the AWS Educate system
 }
 
-motd
-sudo apt-get install cowsay
+change_MOTD(){
+    #I am not wanting the user to see that a reboot is required so he/she doesn't reboot the system
+    sudo chmod -x /etc/update-motd.d/98-reboot-required
 
-. ~/.bashrc_profile
-#Please run .bashrc_profile to reload
+    #I also don't want the user to see any available updates. That is the job of the system admin
+    sudo chmod -x /etc/update-motd.d/90-updates-available
 
+    #What I am trying to do with this one is tell a particular user how many nodes they are running
+    echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/##curto-motd
 
-#This installes the Solarized vim color scheme
+}
 
-mkdir ~/.vim
-mkdir ~/.vim/bundle
-cd ~/.vim/bundle
-git clone git://github.com/altercation/solarized.git
-cd solarized/
-mv vim-colors-solarized/ ~/.vim/bundle/
-cd
-vim .vimrc
-i
-sytanx enable
-set background=light
-colorscheme solarized
 
 printHelp() {
   if [[$1 = '-help'] || [$1 = 'help'] || [$1 = '-h'] || [$1 = 'h']]; then
@@ -54,25 +45,12 @@ f1
 }
  
  
- 
- #I am not wanting the user to see that a reboot is required so he/she doesn't reboot the system
-sudo chmod -x /etc/update-motd.d/98-reboot-required
-
-#I also don't want the user to see any available updates. That is the job of the system admin
-sudo chmod -x /etc/update-motd.d/90-updates-available
-
-#What I am trying to do with this one is tell a particular user how many nodes they are running
-echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/curto-motd
-
-
-chmod a+x script
-PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
-
 motdFromInternet() {
   sudo apt install fortune-mod cowsay
   Y
 }
 
 addScriptToPATH
+change_MOTD
 motdFromInternet
 printHelp
