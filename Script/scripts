@@ -7,7 +7,8 @@ aws-ssh curto.2@wright.edu
 #here I am trying to make a command using my login information for the AWS Educate system
 }
 
-suod apt-get install cowsay
+motd
+sudo apt-get install cowsay
 
 . ~/.bashrc_profile
 #Please run .bashrc_profile to reload
