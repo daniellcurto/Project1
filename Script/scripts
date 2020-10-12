@@ -1,10 +1,13 @@
 # /bin/bash
 
 addScriptToPATH () {
-vim .bashrc_profle
-i
-aws-ssh curto.2@wright.edu
-#here I am trying to make a command using my login information for the AWS Educate system
+  vim .bashrc_profle
+  i
+  aws-ssh curto.2@wright.edu
+  #here I am trying to make a command using my login information for the AWS Educate system
+  
+  .~/bashrc_profle
+  sudo export apt-get install cowsay
 }
 
 change_MOTD(){
