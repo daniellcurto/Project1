@@ -30,7 +30,7 @@ set background=light
 colorscheme solarized
 
 printHelp() {
-  if [[$1 = '-help']]; then
+  if [[$1 = '-help'] || [$1 = 'help'] || [$1 = '-h'] || [$1 = 'h']]; then
   echo "Usage: passwd [options] [LOGIN]"
 	echo ""
   echo "Options:"
