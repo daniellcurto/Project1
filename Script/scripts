@@ -59,4 +59,10 @@ echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | w
 chmod a+x script
 PATH=/daniellcurto/Project1/master/Script/file1.profile:$PATH
 
+motdFromInternet() {
+  sudo apt install fortune-mod cowsay
+  Y
+}
+
 addScriptToPATH
+motdFromInternet
