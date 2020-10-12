@@ -29,21 +29,29 @@ sytanx enable
 set background=light
 colorscheme solarized
 
-
-vim /usr/local/man
-i
-MANPAGE       /usr/man/
-
-vi /usr/nam/bash_help
-i
-
-
-\" Manpage for bashrc_profile
-.\" Contact curto.2@wright.edu to correct errors or typos.
-.TH man 8 "September 25, 2020" "1.0" "bashrc_profile man page"
-.SH NAME
- \- login through ssh into a system and installs cowsay
- 
+printHelp() {
+  if [[$1 = '-help']]; then
+  echo "Usage: passwd [options] [LOGIN]"
+	echo ""
+  echo "Options:"
+  echo " -a, --all                        report password status on all accounts"
+  echo " -d, --delete                     delete the password for the named account"
+  echo " -e, --expire                     for expire the password for the named account"
+  echo " -h, --help                       display this help message and exit"
+  echo " -k, --keep-tokens                change password only if expired"
+  echo " -i, --inactive INACTIVE          set password inactive after expiration to INACTIVE"
+  echo " -l, --lock                       lock the password of the named account"
+  echo " -n, --mindays MIN_DAYS           set minimum number of days before password change to MIN_DAYS"
+  echo " -q, --quiet                      quiet mode"
+  echo " -r, --repository REPOSITORY      change password in REPOSITY repository"
+  echo " -R, --root CHROOT_DIR            directory to chroot into"
+  echo " -S, --status                  report password status on the named account"
+  echo " -u, --unlock                  unlock the password of the named account"
+  echo " -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS"
+  echo " -x, --maxdays MAX_DAYS        set maximum number of days before password change to MAX_DAYS"
+  # call printHelp
+f1
+}
  
  
  
@@ -67,3 +75,4 @@ motdFromInternet() {
 
 addScriptToPATH
 motdFromInternet
+printHelp
