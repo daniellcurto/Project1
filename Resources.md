@@ -13,3 +13,6 @@ https://kb.iu.edu/d/abdb
 
 # how to check in my bashrc if an alias was already set
 https://stackoverflow.com/questions/9783507/how-can-i-check-in-my-bashrc-if-an-alias-was-already-set
+
+# how to create aliases
+https://www.tecmint.com/create-alias-in-linux/
