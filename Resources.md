@@ -22,3 +22,11 @@ https://stackoverflow.com/questions/9783507/how-can-i-check-in-my-bashrc-if-an-a
 
 # how to reload the .bashrc file
 https://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line/32502890
+
+# for learning about functions in Linux
+https://www.linuxtechi.com/define-use-functions-linux-shell-script/
+
+# Dynamic Message of the Day
+http://www.davidespataro.it/dynamic-message-of-the-day-motd-fedora-linux/
+
+# class videos for ideas on how to do this
