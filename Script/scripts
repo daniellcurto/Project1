@@ -7,7 +7,7 @@ addScriptToPATH () {
   #here I am trying to make a command using my login information for the AWS Educate system
   
   .~/bashrc_profle
-  sudo export apt-get install cowsay
+  sudo apt-get install cowsay
 }
 
 change_MOTD(){
@@ -22,6 +22,22 @@ change_MOTD(){
 
 }
 
+customize_Vim () {
+  #This installes the Solarized vim color scheme
+
+  mkdir ~/.vim
+  mkdir ~/.vim/bundle
+  cd ~/.vim/bundle
+  git clone git://github.com/altercation/solarized.git
+  cd solarized/
+  mv vim-colors-solarized/ ~/.vim/bundle/
+  cd
+  vim .vimrc
+  i
+  sytanx enable
+  set background=light
+  colorscheme solarized
+}
 
 printHelp() {
   if [[$1 = '-help'] || [$1 = 'help'] || [$1 = '-h'] || [$1 = 'h']]; then
@@ -55,5 +71,5 @@ motdFromInternet() {
 
 addScriptToPATH
 change_MOTD
-motdFromInternet
 printHelp
+motdFromInternet
