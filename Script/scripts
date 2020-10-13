@@ -7,7 +7,7 @@ addScriptToPATH () {
       echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/scripts' >> ~/.profile
   f1 
 
-  cmod uo+x scripts./scripts
+  chmod uo+x scripts./scripts
   ./scripts
 }
 
@@ -38,6 +38,8 @@ customize_Vim () {
   sytanx enable
   set background=light
   colorscheme solarized
+
+  
 }
 
 printHelp() {
