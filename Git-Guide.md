@@ -82,5 +82,4 @@ When completing the merge, there is an option to close the branch as well. Use t
 
 Hope you find this useful!
 
-Retrieved from https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/
-on October 13, 2020
+Retrieved from https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/ on October 13, 2020
