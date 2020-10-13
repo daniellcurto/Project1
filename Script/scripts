@@ -1,13 +1,11 @@
-# /bin/bash
+#!/bin/bash
 
 addScriptToPATH () {
-  vim .bashrc_profle
-  i
-  aws-ssh curto.2@wright.edu
-  #here I am trying to make a command using my login information for the AWS Educate system
   
-  .~/bashrc_profle
-  sudo apt-get install cowsay
+  if ! command -v scripts;
+  else
+      echo 'export PATH=$PATH:/home/ubuntu/scripts' >> ~/.profile
+  f1 
 }
 
 change_MOTD(){
@@ -20,7 +18,7 @@ change_MOTD(){
     #What I am trying to do with this one is tell a particular user how many nodes they are running
     echo '"Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account"' /etc/update-motd.d/##curto-motd
 
-}
+} 
 
 customize_Vim () {
   #This installes the Solarized vim color scheme
