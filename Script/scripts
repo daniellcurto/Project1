@@ -25,15 +25,17 @@ change_MOTD(){
 
 customize_Vim () {
   #This installes the Solarized vim color scheme
-
-  mkdir ~/.vim
-  mkdir ~/.vim/bundle
-  cd ~/.vim/bundle
-  git clone git://github.com/altercation/solarized.git ~/.vim.bundle/start/solarized
+  #only clone plugin IF directory does not exist
+  if [-d ~/.vim/pack/bundle/start/solarized]; then
+    echo "Good news! Solarized has already been installed!"
+  else
+    git clone git://github.com/altercation/solarized.git ~/.vim/pack/bundle/start/solarized
+    sytanx enable
+    set background=light
+    colorscheme solarized
+    echo 'export PATH=$PATH:~/.vim/pack/bundle/start/solarized' >> ~/.profile
+  f1
   
-  sytanx enable
-  set background=light
-  colorscheme solarized
 
   
 }
