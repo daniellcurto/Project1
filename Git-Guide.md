@@ -81,5 +81,6 @@ At this point, the conflicts should be gone. You can now log in to your remote s
 When completing the merge, there is an option to close the branch as well. Use this option if you feel that the branch created is no longer necessary.
 
 Hope you find this useful!
+
 Retrieved from https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/
 on October 13, 2020
