@@ -38,10 +38,13 @@ customize_Vim () {
 }
 
 alias1(){
- 
+# create aws-ssh alias
+echo 'aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
+# please reload 
 }
 
 alias2(){
+# create alias of choice
 
 }
 
