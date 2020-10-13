@@ -29,12 +29,8 @@ customize_Vim () {
   mkdir ~/.vim
   mkdir ~/.vim/bundle
   cd ~/.vim/bundle
-  git clone git://github.com/altercation/solarized.git
-  cd solarized/
-  mv vim-colors-solarized/ ~/.vim/bundle/
-  cd
-  vim .vimrc
-  i
+  git clone git://github.com/altercation/solarized.git ~/.vim.bundle/start/solarized
+  
   sytanx enable
   set background=light
   colorscheme solarized
