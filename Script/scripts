@@ -38,11 +38,11 @@ customize_Vim () {
 }
 
 alias1(){
-
+ 
 }
 
 alias2(){
-  
+
 }
 
 printHelp() {
