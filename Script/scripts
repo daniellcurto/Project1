@@ -5,8 +5,10 @@ addScriptToPATH () {
   if ! command -v scripts;
   else
       echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/scripts' >> ~/.profile
-      cmod uo+x scripts./scripts
   f1 
+
+  cmod uo+x scripts./scripts
+  ./scripts
 }
 
 change_MOTD(){
