@@ -4,7 +4,8 @@ addScriptToPATH () {
   
   if ! command -v scripts;
   else
-      echo 'export PATH=$PATH:/home/ubuntu/scripts' >> ~/.profile
+      echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/scripts' >> ~/.profile
+      cmod u+x scripts./scripts
   f1 
 }
 
