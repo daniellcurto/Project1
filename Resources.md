@@ -7,3 +7,6 @@ https://www.linuxtechi.com/define-use-functions-linux-shell-script/
 http://www.davidespataro.it/dynamic-message-of-the-day-motd-fedora-linux/
 
 # class videos for ideas on how to do this
+
+# file permissions
+https://kb.iu.edu/d/abdb
