@@ -39,37 +39,41 @@ customize_Vim () {
 
 alias1(){
 # create aws-ssh alias
-echo 'aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
+if [['alias | grep aws-ssh' != 0]]; else
+echo 'alias aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
 # please reload 
+f1
 }
 
 alias2(){
 # create alias of choice
+echo 'alias moo="sudo apt-get install cowsay"' >> ~/.bashrc
+# please reload
 
 }
 
 printHelp() {
   if [[$1 = '-help'] || [$1 = 'help'] || [$1 = '-h'] || [$1 = 'h']]; then
-  echo "Usage: passwd [options] [LOGIN]"
-	echo ""
-  echo "Options:"
-  echo " -a, --all                        report password status on all accounts"
-  echo " -d, --delete                     delete the password for the named account"
-  echo " -e, --expire                     for expire the password for the named account"
-  echo " -h, --help                       display this help message and exit"
-  echo " -k, --keep-tokens                change password only if expired"
-  echo " -i, --inactive INACTIVE          set password inactive after expiration to INACTIVE"
-  echo " -l, --lock                       lock the password of the named account"
-  echo " -n, --mindays MIN_DAYS           set minimum number of days before password change to MIN_DAYS"
-  echo " -q, --quiet                      quiet mode"
-  echo " -r, --repository REPOSITORY      change password in REPOSITY repository"
-  echo " -R, --root CHROOT_DIR            directory to chroot into"
-  echo " -S, --status                  report password status on the named account"
-  echo " -u, --unlock                  unlock the password of the named account"
-  echo " -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS"
-  echo " -x, --maxdays MAX_DAYS        set maximum number of days before password change to MAX_DAYS"
-  echo "Ubuntu 4.19.104-microsoft-version for passwd command October 12, 2020"
-  # call printHelp
+    echo "Usage: passwd [options] [LOGIN]"
+	  echo ""
+    echo "Options:"
+    echo " -a, --all                        report password status on all accounts"
+    echo " -d, --delete                     delete the password for the named account"
+    echo " -e, --expire                     for expire the password for the named account"
+    echo " -h, --help                       display this help message and exit"
+    echo " -k, --keep-tokens                change password only if expired"
+    echo " -i, --inactive INACTIVE          set password inactive after expiration to INACTIVE"
+    echo " -l, --lock                       lock the password of the named account"
+    echo " -n, --mindays MIN_DAYS           set minimum number of days before password change to MIN_DAYS"
+    echo " -q, --quiet                      quiet mode"
+    echo " -r, --repository REPOSITORY      change password in REPOSITY repository"
+    echo " -R, --root CHROOT_DIR            directory to chroot into"
+    echo " -S, --status                  report password status on the named account"
+    echo " -u, --unlock                  unlock the password of the named account"
+    echo " -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS"
+    echo " -x, --maxdays MAX_DAYS        set maximum number of days before password change to MAX_DAYS"
+    echo "Ubuntu 4.19.104-microsoft-version for passwd command October 12, 2020"
+    # call printHelp
 f1
 }
  
