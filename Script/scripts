@@ -33,10 +33,15 @@ customize_Vim () {
     sytanx enable
     set background=light
     colorscheme solarized
-    echo 'export PATH=$PATH:~/.vim/pack/bundle/start/solarized' >> ~/.profile
+    echo 'export PATH=$PATH:~/.vim/pack/bundle/start/solarized' >> ~/.vimrc
   f1
-  
+}
 
+alias1(){
+
+}
+
+alias2(){
   
 }
 
@@ -60,6 +65,7 @@ printHelp() {
   echo " -u, --unlock                  unlock the password of the named account"
   echo " -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS"
   echo " -x, --maxdays MAX_DAYS        set maximum number of days before password change to MAX_DAYS"
+  echo "Ubuntu 4.19.104-microsoft-version for passwd command October 12, 2020"
   # call printHelp
 f1
 }
@@ -69,8 +75,3 @@ motdFromInternet() {
   sudo apt install fortune-mod cowsay
   Y
 }
-
-addScriptToPATH
-change_MOTD
-printHelp
-motdFromInternet
