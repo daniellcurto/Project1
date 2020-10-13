@@ -16,3 +16,6 @@ https://stackoverflow.com/questions/9783507/how-can-i-check-in-my-bashrc-if-an-a
 
 # how to create aliases
 https://www.tecmint.com/create-alias-in-linux/
+
+# how to check to see if an alias already exists
+https://stackoverflow.com/questions/9783507/how-can-i-check-in-my-bashrc-if-an-alias-was-already-set
