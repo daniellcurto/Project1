@@ -1,18 +1,18 @@
 # Basic Git Usage:
+
 # How to add to git:
-#  git add [filename]
-#  
+git add [filename]  
+
 # How to commit:
-# git commit
-#
+git commit
+
 # How to push:
-# git push
-#
-# Retrieved from: Routine use of git and github
-# https://kbroman.org/github_tutorial/pages/routine.html
-# on October 13, 2020
-#
-#
+git push
+
+Retrieved from: Routine use of git and github
+https://kbroman.org/github_tutorial/pages/routine.html
+on October 13, 2020
+
 Akshay Ranganath's Blogs
 Blogs about Image Optimization, Web Performance, SEO and web technology.
 
@@ -81,3 +81,5 @@ At this point, the conflicts should be gone. You can now log in to your remote s
 When completing the merge, there is an option to close the branch as well. Use this option if you feel that the branch created is no longer necessary.
 
 Hope you find this useful!
+Retrieved from https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/
+on October 13, 2020
