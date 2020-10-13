@@ -41,7 +41,7 @@ alias1(){
 # create aws-ssh alias
 if [['alias | grep aws-ssh' != 0]]; else
   echo 'alias aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
-  # please reload 
+  ~/.bashrc
 f1
 }
 
@@ -49,7 +49,7 @@ alias2(){
 # create alias of choice
 if [['alias | grep moo' != 0]]; then
   echo 'alias moo="sudo apt-get install cowsay"' >> ~/.bashrc
-  # please reload
+  ~/.bashrc
 f1
 }
 
@@ -83,3 +83,11 @@ motdFromInternet() {
   sudo apt install fortune-mod cowsay
   Y
 }
+
+addScriptToPATH
+change_MOTD
+customize_Vim
+alias1
+alias2
+printHelp
+motdFromInternet
