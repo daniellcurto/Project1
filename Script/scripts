@@ -40,16 +40,17 @@ customize_Vim () {
 alias1(){
 # create aws-ssh alias
 if [['alias | grep aws-ssh' != 0]]; else
-echo 'alias aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
-# please reload 
+  echo 'alias aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
+  # please reload 
 f1
 }
 
 alias2(){
 # create alias of choice
-echo 'alias moo="sudo apt-get install cowsay"' >> ~/.bashrc
-# please reload
-
+if [['alias | grep moo' != 0]]; then
+  echo 'alias moo="sudo apt-get install cowsay"' >> ~/.bashrc
+  # please reload
+f1
 }
 
 printHelp() {
