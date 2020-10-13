@@ -13,8 +13,8 @@ Retrieved from: Routine use of git and github
 https://kbroman.org/github_tutorial/pages/routine.html
 on October 13, 2020
 
-Akshay Ranganath's Blogs
-Blogs about Image Optimization, Web Performance, SEO and web technology.
+# Akshay Ranganath's Blogs
+# Blogs about Image Optimization, Web Performance, SEO and web technology.
 
 Blog About
 Handling a Git Pull request with merge conflict
