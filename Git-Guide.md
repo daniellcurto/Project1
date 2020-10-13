@@ -83,3 +83,43 @@ When completing the merge, there is an option to close the branch as well. Use t
 Hope you find this useful!
 
 Retrieved from https://akshayranganath.github.io/Git-Pull-Handling-Merge-Conflict/ on October 13, 2020
+
+# Creating an issue
+# Issues can be used to keep track of bugs, enhancements, or other requests.
+
+Any GitHub user can create an issue in a public repository where issues have not been disabled.
+
+You can open a new issue based on code from an existing pull request. For more information, see "Opening an issue from code."
+
+You can open a new issue directly from a comment in an issue or a pull request review. For more information, see "Opening an issue from a comment."
+
+Tip: You can also create an issue using the GitHub CLI. For more information, see "gh issue create" in the GitHub CLI documentation.
+
+If you're using a project board to track and prioritize your work, you can convert project board notes to issues. For more information, see "About project boards" and "Adding notes to a project board."
+
+Tips: Project maintainers can choose to:
+
+Create an issue template for a repository. Templates include prompts for information in the body of an issue. For more information, see "About issue and pull request templates."
+Disable issues for a repository. For more information, see "Disabling issues." Pull requests can't be turned off and are always available.
+On GitHub, navigate to the main page of the repository.
+
+Under your repository name, click  Issues.
+
+Issues tab
+Click New issue.
+
+New Issues button
+If there are multiple issue types, click Get started next to the type of issue you'd like to open.
+
+Select the type of issue you want to create
+Optionally, click Open a blank issue. if the type of issue you'd like to open isn't included in the available options.
+
+Link to open a blank issue
+Type a title and description for your issue.
+
+A sample issue
+If you're a project maintainer, you can assign the issue to someone, add it to a project board, associate it with a milestone, or apply a label.
+
+When you're finished, click Submit new issue.
+
+Copied from: https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue on October 13, 2020
