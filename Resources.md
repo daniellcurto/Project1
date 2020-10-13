@@ -19,3 +19,6 @@ https://www.tecmint.com/create-alias-in-linux/
 
 # how to check to see if an alias already exists
 https://stackoverflow.com/questions/9783507/how-can-i-check-in-my-bashrc-if-an-alias-was-already-set
+
+# how to reload the .bashrc file
+https://stackoverflow.com/questions/4608187/how-to-reload-bash-profile-from-the-command-line/32502890
