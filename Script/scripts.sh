@@ -1,10 +1,9 @@
 #!/bin/bash
 
 addScriptToPATH () {
-    if command -v scripts.sh &> /dev/null
+    if ! command -v scripts.sh &> /dev/null
     then
       echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/' >> ~/.profile
-      # find out the logic of this if statement
     fi
 }
 
@@ -17,7 +16,8 @@ change_MOTD(){
 
     #What I am trying to do with this one is tell a particular user how many nodes they are running
     echo 'Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account' >> /etc/update-motd.d/curto-motd
-    # change user to root and make same permissions as other files in directory
+    sudo chmod 755 curto-motd
+    sudo chown root curto-motd
 } 
 
 customize_Vim () {
@@ -38,7 +38,7 @@ alias1(){
 if ! command -v aws-ssh &> /dev/null
   echo 'alias aws-ssh="ssh -i demo.key ubuntu@54.205.113.32"' >> ~/.bashrc
   . ~/.bashrc
-  # remind user to reload this themselves as this doesn't work
+  echo 'Please reload the .bashrc file as this does not work'
 fi
 }
 
@@ -48,7 +48,7 @@ if ! command -v moo &> /dev/null
 then
   echo 'alias moo="sudo apt-get install cowsay"' >> ~/.bashrc
   . ~/.bashrc
-  # remind user to reload this themselves as this doesn't work
+  echo 'Please reload the .bashrc file as this does not work'
 fi
 }
 
