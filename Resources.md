@@ -30,3 +30,6 @@ https://www.linuxtechi.com/define-use-functions-linux-shell-script/
 http://www.davidespataro.it/dynamic-message-of-the-day-motd-fedora-linux/
 
 # class videos for ideas on how to do this
+
+# How to change the file ownership to root on ubutu
+https://askubuntu.com/questions/1034377/how-can-i-change-the-file-ownership-to-root-on-ubuntu-14-04
