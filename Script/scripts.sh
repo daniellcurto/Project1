@@ -54,32 +54,21 @@ fi
 
 printHelp() {
   if [[$1 = '-help'] || [$1 = 'help'] || [$1 = '-h'] || [$1 = 'h']]; then
-    echo "Usage: passwd [options] [LOGIN]"
-	  echo ""
-    echo "Options:"
-    echo " -a, --all                        report password status on all accounts"
-    echo " -d, --delete                     delete the password for the named account"
-    echo " -e, --expire                     for expire the password for the named account"
-    echo " -h, --help                       display this help message and exit"
-    echo " -k, --keep-tokens                change password only if expired"
-    echo " -i, --inactive INACTIVE          set password inactive after expiration to INACTIVE"
-    echo " -l, --lock                       lock the password of the named account"
-    echo " -n, --mindays MIN_DAYS           set minimum number of days before password change to MIN_DAYS"
-    echo " -q, --quiet                      quiet mode"
-    echo " -r, --repository REPOSITORY      change password in REPOSITY repository"
-    echo " -R, --root CHROOT_DIR            directory to chroot into"
-    echo " -S, --status                  report password status on the named account"
-    echo " -u, --unlock                  unlock the password of the named account"
-    echo " -w, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS"
-    echo " -x, --maxdays MAX_DAYS        set maximum number of days before password change to MAX_DAYS"
-    echo "Ubuntu 4.19.104-microsoft-version for passwd command October 12, 2020"
-    # help should just be about how this particular script works
+    echo "This script will set itself up in the .profile file."
+    echo "It will disable the '98-reboot-required' and the '90-updates-available' files"
+    echo "It will also add a custom motd with the saying Welcome to your system '$(echo $USER)'. There are currently '$(find . | wc -l)'-nodes running on your account'  and will add it to the curto-motd file"
+    echo "The script will make sure the file 'curto-motd' will given the same permissions and ownership as the other motd files"
+    echo "The Solarized vim color scheme and the desired custom adjustments will be aded to .profile"
+    echo "The first alias called 'aws-ssh' will point to ssh -i demo.key ubuntu@54.205.113.32"
+    echo "The second alias called 'moo' will point to sudo apt-get install cowsay"
+    echo "This help option can be called by -help or help or -h or h"
+    echo "Also, there is a random motd that can be installed from the internet called fortune-mod cowsay"
     # call printHelp
 fi
 }
  
 motdFromInternet() {
-  sudo apt install fortune-mod cowsay
+  echo 'sudo apt install fortune-mod cowsay' >> ~/.bashrc
 
 }
 
