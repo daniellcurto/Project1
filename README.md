@@ -20,4 +20,4 @@ alias2 will make an alias for installing cowsay
 this is a replica of the passwd help page, but it does the job nonetheless
 
 Optional: Extra Credit
-I chose the installing fortune-mod cowsay option. It looked cool
+I chose to install fortune-mod cowsay. I thought it would look cool.
