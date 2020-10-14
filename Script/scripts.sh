@@ -1,11 +1,11 @@
 #!/bin/bash
 
 addScriptToPATH () {
-  
-  if [[":$PATH:" == *":$:scripts"*]]; then
-      echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/scripts' >> ~/.profile
-  # find out the logic of this if statement
-  fi
+    if command -v scripts.sh &> /dev/null
+    then
+      echo 'export PATH=$PATH:https://github.com/daniellcurto/Project1/tree/master/Script/' >> ~/.profile
+      # find out the logic of this if statement
+    fi
 }
 
 change_MOTD(){
